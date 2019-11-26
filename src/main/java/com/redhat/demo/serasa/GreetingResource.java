@@ -16,14 +16,14 @@ public class GreetingResource {
     @Autowired
     GreetingService greetingService;
 
-    @GetMapping( "/api2/hello" )
+    @GetMapping( "/springboot/hello" )
     @ResponseStatus( OK )
     @ResponseBody
     public String hello() {
         return this.greetingService.greeting("spring-boot customer");
     }
 
-    @GetMapping( "/api2/hello/serverinfo" )
+    @GetMapping( "/springboot/serverinfo" )
     @ResponseStatus( OK )
     @ResponseBody
     public String serverInfo(HttpServletRequest req) {
