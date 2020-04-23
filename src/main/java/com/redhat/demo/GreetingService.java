@@ -1,4 +1,4 @@
-package com.redhat.demo.serasa;
+package com.redhat.demo;
 
 import org.springframework.stereotype.Service;
 
@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service;
 public class GreetingService {
 
     public String greeting(String name) {
-        return "hello " + name;
+        return "hello " + name + " from springboot";
     }
 }
